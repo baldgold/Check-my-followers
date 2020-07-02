@@ -11,6 +11,18 @@ I created this small project for personal usе. You get a list with a user ID th
 
 3. Last step: We run "check_unsub.py" and get on the console a list with all user IDs that have unsubscribed from you during the time that    has passed since the creation of "old_followers_id.txt".
  
+If you want to use that spaghetti code for your Instagram account, then we need to change in "get_followers.py":
+1. url_base            // 8 line
+2. command_template    // 10 line
+3. variables           // 32 line
+4. query_has           // 34 line
+
+You can find that information about your account if:
+1. go to your instagram page
+2. press f12
+3. select "Headers" and copy "QUERY STRING PARAMETERS" (variables, query_has)
+4. next select "XHR". press "followers" in your page and copy as cURL newly created request. (url_base, command_template)
+ 
 That's all:)
 This project was created specifically for training. 
 Thanks for your attention!
